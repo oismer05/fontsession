@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>GameZone | Mi hobby: los videojuegos</title>
+  <meta name="description" content="Bienvenido a GameZone, un espacio dedicado al apasionante mundo de los videojuegos. Descubre géneros, imágenes y comparte tu opinión." />
+  <meta name="keywords" content="videojuegos, gaming, hobby, RPG, acción, aventura, galería de videojuegos, comunidad gamer" />
+  <meta name="author" content="GameZone" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph (redes sociales) -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="GameZone | Mi hobby: los videojuegos" />
+  <meta property="og:description" content="Un espacio dedicado al mundo de los videojuegos: géneros favoritos, galería de imágenes y comunidad." />
+  <meta property="og:image"       content="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1200" />
+  <meta property="og:locale"      content="es_CO" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="GameZone | Mi hobby: los videojuegos" />
+  <meta name="twitter:description" content="Un espacio dedicado al mundo de los videojuegos." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/estilos.css" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://gamezone.ejemplo.com/" />
+</head>
+
+<body>
+
+  <!-- ░░░ ENCABEZADO / NAV ░░░ -->
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#inicio" class="nav__logo" aria-label="GameZone — inicio">
+        <span class="nav__logo-icon" aria-hidden="true">🎮</span>
+        GameZone
+      </a>
+
+      <button
+        class="nav__toggle"
+        id="btnMenu"
+        aria-expanded="false"
+        aria-controls="navMenu"
+        aria-label="Abrir menú de navegación"
+      >☰</button>
+
+      <ul class="nav__menu" id="navMenu" role="list">
+        <li><a href="#inicio"      class="nav__link nav__link--activo">Inicio</a></li>
+        <li><a href="#intro"       class="nav__link">¿Por qué?</a></li>
+        <li><a href="#generos"     class="nav__link">Géneros</a></li>
+        <li><a href="#galeria"     class="nav__link">Galería</a></li>
+        <li><a href="#comentarios" class="nav__link">Comunidad</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ░░░ CONTENIDO PRINCIPAL ░░░ -->
+  <main id="contenido-principal">
+
+    <!-- ── HERO ── -->
+    <section class="hero" id="inicio" aria-labelledby="heroTitulo">
+      <!-- Esferas decorativas -->
+      <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--3" aria-hidden="true"></div>
+
+      <div class="hero__contenido">
+        <p class="hero__badge" aria-label="Etiqueta: Mi hobby">
+          <span aria-hidden="true">✨</span> Mi hobby favorito
+        </p>
+        <h1 class="hero__titulo" id="heroTitulo">
+          El mundo de los <span>videojuegos</span>
+        </h1>
+        <p class="hero__descripcion">
+          Un espacio hecho con pasión para compartir mi amor por los videojuegos:
+          géneros, imágenes, curiosidades y una comunidad que piensa igual que yo.
+        </p>
+        <div class="hero__acciones">
+          <a href="#galeria"     class="btn btn--primario">Ver galería 🖼️</a>
+          <a href="#comentarios" class="btn btn--outline">Unirme a la comunidad 💬</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── INTRODUCCIÓN ── -->
+    <section class="seccion" id="intro" aria-labelledby="introTitulo">
+      <div class="contenedor">
+        <header class="seccion__encabezado">
+          <h2 class="seccion__titulo" id="introTitulo">¿Por qué los videojuegos? 🕹️</h2>
+          <p class="seccion__subtitulo">Mi historia con este hobby y lo que me apasiona de él</p>
+        </header>
+
+        <div class="intro__grid">
+          <div class="intro__texto">
+            <p>
+              Los videojuegos son mucho más que entretenimiento: son
+              <strong>mundos completos por explorar</strong>, historias que te atrapan y
+              desafíos que ponen a prueba tu mente. Desde niño me perdía horas frente a
+              la pantalla, descubriendo universos que no existían en ningún otro lugar.
+            </p>
+            <p>
+              A lo largo de los años he aprendido que los videojuegos desarrollan
+              <strong>habilidades cognitivas</strong> como la resolución de problemas, el
+              pensamiento estratégico, la coordinación y hasta la empatía a través de las
+              narrativas que ofrecen.
+            </p>
+            <p>
+              Hoy este hobby es también una forma de conectar con otras personas alrededor
+              del mundo, compartir experiencias y seguir aprendiendo algo nuevo cada día.
+              ¡Bienvenido a mi rincón gamer!
+            </p>
+          </div>
+
+          <!-- Estadísticas decorativas -->
+          <div class="stats__grid" aria-label="Datos sobre mi experiencia gamer">
+            <article class="stat-card">
+              <div class="stat-card__icono" aria-hidden="true">🎮</div>
+              <div class="stat-card__valor">15+</div>
+              <div class="stat-card__label">Años jugando</div>
+            </article>
+            <article class="stat-card">
+              <div class="stat-card__icono" aria-hidden="true">🏆</div>
+              <div class="stat-card__valor">200+</div>
+              <div class="stat-card__label">Juegos completados</div>
+            </article>
+            <article class="stat-card">
+              <div class="stat-card__icono" aria-hidden="true">⭐</div>
+              <div class="stat-card__valor">6</div>
+              <div class="stat-card__label">Géneros favoritos</div>
+            </article>
+            <article class="stat-card">
+              <div class="stat-card__icono" aria-hidden="true">⏱️</div>
+              <div class="stat-card__valor">∞</div>
+              <div class="stat-card__label">Horas de diversión</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── GÉNEROS FAVORITOS ── -->
+    <section class="seccion seccion--alt" id="generos" aria-labelledby="generosTitulo">
+      <div class="contenedor">
+        <header class="seccion__encabezado">
+          <h2 class="seccion__titulo" id="generosTitulo">Mis géneros favoritos 🎯</h2>
+          <p class="seccion__subtitulo">Los estilos de juego que más disfruto y por qué</p>
+        </header>
+
+        <div class="generos__grid" role="list" aria-label="Lista de géneros de videojuegos favoritos">
+          <article class="genero-card" role="listitem">
+            <div class="genero-card__icono" aria-hidden="true">⚔️</div>
+            <h3 class="genero-card__nombre">RPG</h3>
+            <p class="genero-card__desc">Historias épicas y personajes memorables que te atrapan durante decenas de horas.</p>
+          </article>
+          <article class="genero-card" role="listitem">
+            <div class="genero-card__icono" aria-hidden="true">🔫</div>
+            <h3 class="genero-card__nombre">Acción</h3>
+            <p class="genero-card__desc">Ritmo frenético, reflejos y adrenalina pura en cada partida.</p>
+          </article>
+          <article class="genero-card" role="listitem">
+            <div class="genero-card__icono" aria-hidden="true">🧩</div>
+            <h3 class="genero-card__nombre">Puzzle</h3>
+            <p class="genero-card__desc">Desafíos mentales que ponen a prueba la lógica y la creatividad.</p>
+          </article>
+          <article class="genero-card" role="listitem">
+            <div class="genero-card__icono" aria-hidden="true">🌍</div>
+            <h3 class="genero-card__nombre">Mundo Abierto</h3>
+            <p class="genero-card__desc">Libertad total para explorar mundos enormes a tu propio ritmo.</p>
+          </article>
+          <article class="genero-card" role="listitem">
+            <div class="genero-card__icono" aria-hidden="true">👥</div>
+            <h3 class="genero-card__nombre">Multijugador</h3>
+            <p class="genero-card__desc">La experiencia social del gaming: cooperar o competir con otros jugadores.</p>
+          </article>
+          <article class="genero-card" role="listitem">
+            <div class="genero-card__icono" aria-hidden="true">👻</div>
+            <h3 class="genero-card__nombre">Horror</h3>
+            <p class="genero-card__desc">Tensión, atmósferas oscuras y sustos garantizados para los valientes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── GALERÍA ── -->
+    <section class="seccion" id="galeria" aria-labelledby="galeriaTitulo">
+      <div class="contenedor">
+        <header class="seccion__encabezado">
+          <h2 class="seccion__titulo" id="galeriaTitulo">Galería de imágenes 🖼️</h2>
+          <p class="seccion__subtitulo">Momentos, mundos y arte del universo gamer — haz clic en cualquier imagen</p>
+        </header>
+
+        <div class="galeria__grid" role="list" aria-label="Galería de imágenes de videojuegos">
+
+          <figure class="galeria__item" role="listitem" tabindex="0" aria-label="Ver imagen: Setup gamer profesional">
+            <div class="galeria__img-wrapper">
+              <img
+                class="galeria__img"
+                src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&q=80"
+                alt="Setup gamer profesional con monitor grande, teclado RGB y controladores"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="galeria__caption">
+              <h3>Setup gamer</h3>
+              <p>El espacio perfecto para largas sesiones de juego</p>
+              <span class="galeria__tag">Setup</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galeria__item" role="listitem" tabindex="0" aria-label="Ver imagen: Controladores clásicos">
+            <div class="galeria__img-wrapper">
+              <img
+                class="galeria__img"
+                src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=600&q=80"
+                alt="Colección de controladores de videojuegos de diferentes consolas sobre fondo oscuro"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="galeria__caption">
+              <h3>Controladores icónicos</h3>
+              <p>De generación en generación, siempre en nuestras manos</p>
+              <span class="galeria__tag">Hardware</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galeria__item" role="listitem" tabindex="0" aria-label="Ver imagen: Competencia de eSports">
+            <div class="galeria__img-wrapper">
+              <img
+                class="galeria__img"
+                src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=600&q=80"
+                alt="Jugadores compitiendo en un torneo de eSports con pantallas gigantes"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="galeria__caption">
+              <h3>eSports</h3>
+              <p>El gaming como deporte profesional a nivel mundial</p>
+              <span class="galeria__tag">Competitivo</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galeria__item" role="listitem" tabindex="0" aria-label="Ver imagen: Juego retro arcade">
+            <div class="galeria__img-wrapper">
+              <img
+                class="galeria__img"
+                src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&q=80"
+                alt="Máquinas arcade retro iluminadas en una sala de juegos oscura"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="galeria__caption">
+              <h3>Arcade retro</h3>
+              <p>Los orígenes del gaming que nunca olvidamos</p>
+              <span class="galeria__tag">Retro</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galeria__item" role="listitem" tabindex="0" aria-label="Ver imagen: Realidad virtual">
+            <div class="galeria__img-wrapper">
+              <img
+                class="galeria__img"
+                src="https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=600&q=80"
+                alt="Persona usando un casco de realidad virtual para jugar videojuegos"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="galeria__caption">
+              <h3>Realidad virtual</h3>
+              <p>La nueva frontera: sumergirse completamente en el juego</p>
+              <span class="galeria__tag">VR</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galeria__item" role="listitem" tabindex="0" aria-label="Ver imagen: Gaming portátil">
+            <div class="galeria__img-wrapper">
+              <img
+                class="galeria__img"
+                src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=600&q=80"
+                alt="Consola portátil de videojuegos sostenida en las manos con un juego activo"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="galeria__caption">
+              <h3>Gaming portátil</h3>
+              <p>Lleva tus mundos favoritos a cualquier lugar</p>
+              <span class="galeria__tag">Portátil</span>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MODAL GALERÍA ── -->
+    <div
+      class="modal-overlay"
+      id="modalOverlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalCaption"
+      aria-hidden="true"
+    >
+      <div class="modal__contenido">
+        <img class="modal__img" id="modalImg" src="" alt="" />
+        <div class="modal__footer">
+          <p class="modal__caption" id="modalCaption"></p>
+          <button class="modal__close" id="modalClose" aria-label="Cerrar imagen">✕</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── COMENTARIOS ── -->
+    <section class="seccion seccion--alt" id="comentarios" aria-labelledby="comentariosTitulo">
+      <div class="contenedor">
+        <header class="seccion__encabezado">
+          <h2 class="seccion__titulo" id="comentariosTitulo">Comunidad Gamer 💬</h2>
+          <p class="seccion__subtitulo">Comparte tu experiencia, tu juego favorito o cualquier pensamiento sobre gaming</p>
+        </header>
+
+        <div class="comentarios__layout">
+
+          <!-- FORMULARIO -->
+          <div>
+            <div class="form-card">
+              <h3 class="form-card__titulo">
+                <span aria-hidden="true">✍️</span> Deja tu comentario
+              </h3>
+
+              <form id="formComentario" novalidate aria-label="Formulario para dejar un comentario">
+
+                <div class="form__grupo">
+                  <label class="form__label" for="nombreCompleto">
+                    Nombre completo <sup aria-label="requerido">*</sup>
+                  </label>
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="nombreCompleto"
+                    name="nombreCompleto"
+                    placeholder="Ej: Juan Pérez"
+                    required
+                    maxlength="80"
+                    autocomplete="name"
+                    aria-required="true"
+                    aria-describedby="nombreHelp"
+                  />
+                  <span class="sr-only" id="nombreHelp">Escribe tu nombre completo</span>
+                </div>
+
+                <div class="form__grupo">
+                  <label class="form__label" for="comentario">
+                    Comentario <sup aria-label="requerido">*</sup>
+                  </label>
+                  <textarea
+                    class="form__textarea"
+                    id="comentario"
+                    name="comentario"
+                    placeholder="¿Cuál es tu juego favorito y por qué?"
+                    required
+                    maxlength="300"
+                    aria-required="true"
+                    aria-describedby="comentHelp charCount"
+                  ></textarea>
+                  <span class="sr-only" id="comentHelp">Escribe un comentario de máximo 300 caracteres</span>
+                </div>
+
+                <div class="form__footer">
+                  <span class="char-count" id="charCount" aria-live="polite" aria-atomic="true">0/300</span>
+                  <button class="form__btn" type="submit" id="btnEnviar">
+                    Publicar comentario 🚀
+                  </button>
+                </div>
+
+                <!-- Mensajes de estado -->
+                <div
+                  class="form__mensaje form__mensaje--exito"
+                  id="mensajeExito"
+                  role="status"
+                  aria-live="polite"
+                  hidden
+                  tabindex="-1"
+                >
+                  ✅ ¡Tu comentario fue publicado exitosamente!
+                </div>
+                <div
+                  class="form__mensaje form__mensaje--error"
+                  id="mensajeError"
+                  role="alert"
+                  aria-live="assertive"
+                  hidden
+                  tabindex="-1"
+                >
+                  ❌ Hubo un error al enviar. Intenta de nuevo.
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+          <!-- LISTA DE COMENTARIOS -->
+          <div>
+            <div class="comentarios__lista-header">
+              <h3 class="comentarios__lista-titulo">Comentarios recientes</h3>
+              <button
+                class="btn--refrescar"
+                onclick="location.reload()"
+                aria-label="Recargar comentarios"
+              >🔄 Actualizar</button>
+            </div>
+
+            <div
+              class="comentarios__lista"
+              id="listaComentarios"
+              role="feed"
+              aria-label="Lista de comentarios de la comunidad"
+              aria-live="polite"
+            >
+              <!-- Estado: cargando -->
+              <p class="estado-msg" id="loadingMsg" aria-live="polite">
+                ⏳ Cargando comentarios…
+              </p>
+              <!-- Estado: sin datos -->
+              <p class="estado-msg" id="emptyMsg" hidden>
+                🎮 ¡Sé el primero en comentar!
+              </p>
+              <!-- Estado: error -->
+              <p class="estado-msg" id="errorMsg" hidden>
+                ⚠️ No se pudieron cargar los comentarios. Revisa tu conexión.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ░░░ PIE DE PÁGINA ░░░ -->
+  <footer class="site-footer" role="contentinfo">
+    <p>
+      Hecho con <span aria-label="amor">❤️</span> y muchas horas de gaming por
+      <strong>GameZone</strong> &nbsp;·&nbsp;
+      <span aria-label="derechos de autor">&copy;</span> <time datetime="2026">2026</time>
+    </p>
+    <p style="margin-top:0.5rem; font-size:0.78rem; opacity:0.6;">
+      Los datos de comentarios se almacenan en sesión del servidor — se reinician periódicamente.
+    </p>
+  </footer>
+
+  <!-- Scripts (módulo ES6) -->
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
