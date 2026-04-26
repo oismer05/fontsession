@@ -3,7 +3,7 @@
  * La API almacena datos en sesión de Node.js (no persistente entre reinicios).
  */
 
-const API_BASE_URL = 'https://e2d43d4c-01c4-4551-9009-61759c5099d2-00-1c9bvdfkbkv13.kirk.replit.dev/api/comentario';
+const API_BASE_URL = 'https://backsession.vercel.app/api/comentario';
 
 /**
  * Obtiene todos los comentarios desde la API.
