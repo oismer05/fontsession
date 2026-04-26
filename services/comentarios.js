@@ -3,7 +3,7 @@
  * La API almacena datos en sesión de Node.js (no persistente entre reinicios).
  */
 
-const API_BASE_URL = 'https://3c565b10-b63b-48a6-a43b-4f27702cd684-00-3lwdrxlgc8utm.picard.replit.dev/api/comentario';
+const API_BASE_URL = 'https://e2d43d4c-01c4-4551-9009-61759c5099d2-00-1c9bvdfkbkv13.kirk.replit.dev/api/comentario';
 
 /**
  * Obtiene todos los comentarios desde la API.
@@ -13,6 +13,7 @@ export async function obtenerComentarios() {
   try {
     const response = await fetch(API_BASE_URL, {
       method: 'GET',
+      credentials: 'include',
       headers: {
         'Content-Type': 'application/json',
       },
@@ -46,6 +47,7 @@ export async function guardarComentario(nombreCompleto, comentario) {
   try {
     const response = await fetch(API_BASE_URL, {
       method: 'POST',
+      credentials: 'include',
       headers: {
         'Content-Type': 'application/json',
       },
